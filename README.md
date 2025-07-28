@@ -1,12 +1,12 @@
 
-# 🚢 Titanic Survival Prediction Using Machine Learning
+# 🚢 Titanic Survival Prediction
 
----
+
 
 ## 🎯 Project Title
-**Titanic Survival Prediction Using Machine Learning**
+**Titanic Survival Prediction**
 
----
+
 
 ## 📌 Objectives
 
@@ -17,7 +17,7 @@
 - To train and evaluate multiple classification models to predict survival.
 - To derive insights and patterns from the historical data.
 
----
+
 
 ## 📁 Project Structure
 
@@ -29,7 +29,7 @@ TitanicSurvival/
 └── outputs/                     # Model results, visualizations, etc.
 ```
 
----
+
 
 ## 💻 Technologies Used
 
@@ -40,7 +40,7 @@ TitanicSurvival/
   - `matplotlib`, `seaborn` – Data visualization
   - `scikit-learn` – Machine learning models and evaluation
 
----
+
 
 ## 📊 Dataset Overview
 
@@ -54,7 +54,7 @@ TitanicSurvival/
   - Ticket, Fare, Cabin, Embarked
   - Survived (target variable)
 
----
+
 
 ## 👁️ Data Preview
 
@@ -64,7 +64,8 @@ TitanicSurvival/
 | 2           | 1      | Cumings, Mrs. John     | female | 38  | 1     | 0      | 71.28 | C        | 1        |
 | ...         | ...    | ...                    | ...    | ... | ...   | ...    | ...   | ...      | ...      |
 
----
+
+
 
 ## ⚙️ Installation & Setup
 
@@ -79,7 +80,7 @@ TitanicSurvival/
    jupyter notebook TitanicSurvival.ipynb
    ```
 
----
+
 
 ## 🧾 Tasks Overview
 
@@ -91,7 +92,7 @@ TitanicSurvival/
 - Model training: Logistic Regression, Decision Tree, Random Forest
 - Model evaluation using accuracy, confusion matrix, etc.
 
----
+
 
 ## 💡 Insights and Outcomes
 
@@ -100,7 +101,7 @@ TitanicSurvival/
 - Family size and fare paid showed patterns in survival.
 - Engineered features like **Title** and **Deck** improved model accuracy.
 
----
+
 
 ## 🔮 Future Improvements
 
@@ -109,7 +110,7 @@ TitanicSurvival/
 - Deployment of model using Flask or Streamlit.
 - Create a web dashboard for predictions and visualization.
 
----
+
 
 ## 📬 Contact
 
@@ -117,4 +118,4 @@ TitanicSurvival/
 **Email:** [priyankaejjana@gmail.com](mailto:priyankaejjana@gmail.com)  
 **GitHub:** [priyankaejjana24](https://github.com/priyankaejjana24)
 
----
+
