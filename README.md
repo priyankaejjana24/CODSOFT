@@ -131,7 +131,10 @@ This project includes rich data visualization to understand feature patterns:
 **📬 Contact Author**
 
 Name: Priyanka Keerthana Ejjana
+
 Email: [priyankaejjana@gmail.com]
+
 LinkedIn:[https://www.linkedin.com/in/priyanka-keerthana-ejjana]
+
 
 
