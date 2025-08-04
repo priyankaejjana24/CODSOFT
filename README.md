@@ -1,121 +1,137 @@
+**🌸 Task 2 – Iris Flower Classification**
 
-# 🚢 Titanic Survival Prediction
-
-
-
-## 🎯 Project Title
-**Titanic Survival Prediction**
-
-
-
-## 📌 Objectives
-
-- To explore and understand the Titanic dataset.
-- To preprocess and clean the dataset for machine learning.
-- To perform feature engineering to improve model performance.
-- To visualize trends and relationships in the data.
-- To train and evaluate multiple classification models to predict survival.
-- To derive insights and patterns from the historical data.
-
-
-
-## 📁 Project Structure
-
-```
-TitanicSurvival/
-├── TitanicSurvival.ipynb        # Main Jupyter notebook
-├── README.md                    # Project documentation
-├── data/                        # Contains dataset files
-└── outputs/                     # Model results, visualizations, etc.
-```
-
-
-
-## 💻 Technologies Used
-
-- **Language:** Python
-- **Development Environment:** Jupyter Notebook
-- **Libraries:**
-  - `pandas`, `numpy` – Data manipulation
-  - `matplotlib`, `seaborn` – Data visualization
-  - `scikit-learn` – Machine learning models and evaluation
-
-
-
-## 📊 Dataset Overview
-
-- Source: [Kaggle - Titanic: Machine Learning from Disaster](https://www.kaggle.com/competitions/titanic/data)
-- The dataset contains information about the passengers aboard the Titanic, including:
-  - PassengerId
-  - Pclass (ticket class)
-  - Name, Sex, Age
-  - SibSp (siblings/spouses aboard)
-  - Parch (parents/children aboard)
-  - Ticket, Fare, Cabin, Embarked
-  - Survived (target variable)
-
-
-
-## 👁️ Data Preview
-
-| PassengerId | Pclass | Name                   | Sex    | Age | SibSp | Parch | Fare  | Embarked | Survived |
-|-------------|--------|------------------------|--------|-----|-------|--------|-------|----------|----------|
-| 1           | 3      | Braund, Mr. Owen Harris| male   | 22  | 1     | 0      | 7.25  | S        | 0        |
-| 2           | 1      | Cumings, Mrs. John     | female | 38  | 1     | 0      | 71.28 | C        | 1        |
-| ...         | ...    | ...                    | ...    | ... | ...   | ...    | ...   | ...      | ...      |
+This project was developed as part of the CodSoft Internship on Data Science. The goal is to classify Iris flowers into different species using a machine learning model trained on sepal and petal measurements.
 
 
 
 
-## ⚙️ Installation & Setup
+**🎯 Objective**
 
-1. Clone this repository or download the notebook.
-2. Make sure Python 3.8+ is installed.
-3. Install required libraries using pip:
-   ```bash
-   pip install pandas numpy matplotlib seaborn scikit-learn
-   ```
-4. Run the Jupyter Notebook:
-   ```bash
-   jupyter notebook TitanicSurvival.ipynb
-   ```
+* The Iris dataset consists of three flower species: Setosa, Versicolor, and Virginica.
+* These can be classified based on their sepal length, sepal width, petal length, and petal width.
+* The objective of this task is to train a machine learning model that learns from these measurements and accurately predicts the species of new flower samples.
+* This dataset is widely used for introductory classification tasks in machine learning.
 
 
 
-## 🧾 Tasks Overview
 
-- Data loading and initial inspection
-- Missing value treatment
-- Feature engineering (Title, Deck, FamilySize, etc.)
-- Categorical encoding and scaling
-- Exploratory Data Analysis (EDA)
-- Model training: Logistic Regression, Decision Tree, Random Forest
-- Model evaluation using accuracy, confusion matrix, etc.
+**🏁 Goal**
 
+The primary goal of this project is to build a machine learning model that can accurately classify Iris flowers into one of three species — Setosa, Versicolor, or Virginica — based on their sepal and petal measurements.
 
+Through this task, the project aims to:
 
-## 💡 Insights and Outcomes
-
-- Female passengers had a significantly higher survival rate than males.
-- Passengers in higher classes (Pclass 1) were more likely to survive.
-- Family size and fare paid showed patterns in survival.
-- Engineered features like **Title** and **Deck** improved model accuracy.
+* Understand and apply the end-to-end machine learning workflow (data loading → cleaning → visualization → model building → evaluation).
+* Practice and strengthen skills in data preprocessing, EDA (Exploratory Data Analysis), and model training.
+* Gain experience in visualizing feature relationships to extract insights.
+* Learn to evaluate model performance using accuracy, confusion matrix, and classification reports.
+* Demonstrate the ability to solve a real-world classification problem using Python and ML libraries.
 
 
 
-## 🔮 Future Improvements
 
-- Hyperparameter tuning using GridSearchCV or RandomizedSearchCV.
-- Use of advanced algorithms like XGBoost or LightGBM.
-- Deployment of model using Flask or Streamlit.
-- Create a web dashboard for predictions and visualization.
+**📌 Key Points**
+
+* Part of CodSoft’s Data Science Internship - Task 3
+* Performed data cleaning and preprocessing
+* Visualized the dataset using multiple advanced plots
+* Built a classification model using Logistic Regression
+* Achieved high model accuracy (approximately 97 percent)
+* Evaluated performance using confusion matrix and other metrics
 
 
 
-## 📬 Contact
 
-**Author:** Priyanka Keerthana Ejjana  
-**Email:** [priyankaejjana@gmail.com](mailto:priyankaejjana@gmail.com)  
-**GitHub:** [priyankaejjana24](https://github.com/priyankaejjana24)
+
+**🧰 Technologies Used**
+
+* Language: Python
+* Data Handling: pandas, numpy
+* Data Visualization: matplotlib, seaborn
+* ML Model: scikit-learn (LogisticRegression, metrics)
+* IDE/Notebook: Jupyter Notebook
+
+
+
+
+
+**🔎 Uses**
+
+* Understand how ML classification works with real-world data
+* Gain experience in feature engineering and EDA
+* Practice with data visualization tools to derive insights
+* Build portfolio-worthy ML projects
+
+
+
+
+
+**📘 What I Learned**
+
+* End-to-end ML pipeline from loading data to model evaluation
+* Data cleaning, duplicate removal, and feature scaling
+* How to interpret visual patterns using multiple plot types
+* Hands-on experience with scikit-learn classifiers and evaluation metrics
+
+
+
+
+**📊 About Plots**
+
+This project includes rich data visualization to understand feature patterns:
+
+* Line Plot: Compares mean feature values for each species
+* Bar Chart: Shows sample count per species
+* Box Plot: Displays distribution and outliers for features
+* Strip Plot: Visualizes individual sample spread by species
+* Pair Plot: Shows pairwise feature relationships for class separation
+* Feature-wise Distribution: Histograms showing value spread for each feature
+
+
+
+
+**🧠 ML Model Overview**
+
+1. **Algorithm Used:** Logistic Regression
+2. **Steps Followed:**
+
+   * Load and clean dataset
+   * Visualize data
+   * Apply StandardScaler
+   * Split data into train and test sets
+   * Train and evaluate the model
+3. **Evaluation Tools:**
+
+   * Accuracy Score
+   * Confusion Matrix
+   * Classification Report
+
+
+
+
+
+**🚀 How to Run**
+
+1. Clone this repository or download the files.
+2. Open `iris_classification.ipynb` using Jupyter Notebook or Google Colab.
+3. Run all cells in order to view visualizations and model results.
+
+
+
+
+**📈 Results**
+
+* Achieved approximately 97 percent accuracy
+* The model clearly classified Setosa and mostly separated Versicolor and Virginica
+* Great performance for a basic supervised learning task
+
+
+
+
+**📬 Contact Author**
+
+Name: Priyanka Keerthana Ejjana
+Email: [priyankaejjana@gmail.com]
+LinkedIn:[https://www.linkedin.com/in/priyanka-keerthana-ejjana]
 
 
