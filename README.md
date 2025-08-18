@@ -1,121 +1,137 @@
-
-# 🚢 Titanic Survival Prediction
-
+# 📊 Sales Prediction using Machine Learning
 
 
-## 🎯 Project Title
-**Titanic Survival Prediction**
+## 🏷️ Project Title
+
+**Sales Prediction using  Machine Learning**
 
 
+## 🎯 Goal
 
-## 📌 Objectives
-
-- To explore and understand the Titanic dataset.
-- To preprocess and clean the dataset for machine learning.
-- To perform feature engineering to improve model performance.
-- To visualize trends and relationships in the data.
-- To train and evaluate multiple classification models to predict survival.
-- To derive insights and patterns from the historical data.
+The goal of this project is to **forecast product sales** based on advertising expenditure (TV, Radio, Newspaper). The model helps businesses optimize advertising budgets and maximize sales potential.
 
 
 
-## 📁 Project Structure
+## 🎯 Objectives
 
-```
-TitanicSurvival/
-├── TitanicSurvival.ipynb        # Main Jupyter notebook
-├── README.md                    # Project documentation
-├── data/                        # Contains dataset files
-└── outputs/                     # Model results, visualizations, etc.
-```
+* Perform **Exploratory Data Analysis (EDA)** to understand dataset features.
+* Train a **Machine Learning model** to predict sales.
+* Compare **actual vs predicted sales** to measure accuracy.
+* Identify which advertising channel impacts sales the most.
+* Provide predictions for **new ad spend data**.
 
 
 
-## 💻 Technologies Used
-
-- **Language:** Python
-- **Development Environment:** Jupyter Notebook
-- **Libraries:**
-  - `pandas`, `numpy` – Data manipulation
-  - `matplotlib`, `seaborn` – Data visualization
-  - `scikit-learn` – Machine learning models and evaluation
+## 📂 Project Structure
 
 
-
-## 📊 Dataset Overview
-
-- Source: [Kaggle - Titanic: Machine Learning from Disaster](https://www.kaggle.com/competitions/titanic/data)
-- The dataset contains information about the passengers aboard the Titanic, including:
-  - PassengerId
-  - Pclass (ticket class)
-  - Name, Sex, Age
-  - SibSp (siblings/spouses aboard)
-  - Parch (parents/children aboard)
-  - Ticket, Fare, Cabin, Embarked
-  - Survived (target variable)
+SalesPrediction/
+│── dataset/
+│   └── Advertising.csv
+│── SalesPrediction.ipynb
+│── README.md
+│── requirements.txt
 
 
 
-## 👁️ Data Preview
+## 🛠️ Technologies Used
 
-| PassengerId | Pclass | Name                   | Sex    | Age | SibSp | Parch | Fare  | Embarked | Survived |
-|-------------|--------|------------------------|--------|-----|-------|--------|-------|----------|----------|
-| 1           | 3      | Braund, Mr. Owen Harris| male   | 22  | 1     | 0      | 7.25  | S        | 0        |
-| 2           | 1      | Cumings, Mrs. John     | female | 38  | 1     | 0      | 71.28 | C        | 1        |
-| ...         | ...    | ...                    | ...    | ... | ...   | ...    | ...   | ...      | ...      |
+- **Python 3.x**
+- **Pandas, NumPy** → Data processing
+- **Matplotlib, Seaborn** → Data visualization
+- **Scikit-learn** → Machine Learning (Random Forest, Train-Test Split, Metrics)
+- **Jupyter Notebook**
 
+
+
+## 📑 Dataset Overview
+
+-**Dataset**: Advertising dataset
+-  **Features (X):**
+              * TV advertising spend
+              * Radio advertising spend
+              * Newspaper advertising spend
+- **Target (y):**
+              * Sales
+
+
+## 👀 Data Preview
+
+| TV    | Radio | Newspaper | Sales |
+| ----- | ----- | --------- | ----- |
+| 230.1 | 37.8  | 69.2      | 22.1  |
+| 44.5  | 39.3  | 45.1      | 10.4  |
+| 17.2  | 45.9  | 69.3      | 9.3   |
+| 151.5 | 41.3  | 58.5      | 18.5  |
+| 180.8 | 10.8  | 58.4      | 12.9  |
 
 
 
 ## ⚙️ Installation & Setup
 
-1. Clone this repository or download the notebook.
-2. Make sure Python 3.8+ is installed.
-3. Install required libraries using pip:
+1. Clone this repository
+
    ```bash
-   pip install pandas numpy matplotlib seaborn scikit-learn
+   git clone https://github.com/priyankaejjana24/SalesPrediction.git
+   cd SalesPrediction
    ```
-4. Run the Jupyter Notebook:
+2. Install dependencies
+
    ```bash
-   jupyter notebook TitanicSurvival.ipynb
+   pip install -r requirements.txt
+   ```
+3. Run the notebook
+
+   ```bash
+   jupyter notebook SalesPrediction.ipynb
    ```
 
 
+## 📌 Task Overview (Steps Followed)
 
-## 🧾 Tasks Overview
-
-- Data loading and initial inspection
-- Missing value treatment
-- Feature engineering (Title, Deck, FamilySize, etc.)
-- Categorical encoding and scaling
-- Exploratory Data Analysis (EDA)
-- Model training: Logistic Regression, Decision Tree, Random Forest
-- Model evaluation using accuracy, confusion matrix, etc.
+- Importing the Necessary Libraries.
+- Loading the Advertising Dataset.
+- Explorartory Data Analysis.
+- Describing the Dataset.
+- Shape of the Dataset.
+- Size of the Dataset.
+- List of All Column Names.
+- Correlation Heatmap.
+- Pairpolt to see Relationships.
+- Define Features (X) and target (y).
+- Splitting Dataset.
+- Model Training.
+- Make predictions.
+- Evaluate Model Performance.
+- Compare Actual Vs Predicted.
+- Scatter plot for Actual vs Predicted.
+- Predict for New Data.
+- Check Model Coefficients.
 
 
 
 ## 💡 Insights and Outcomes
 
-- Female passengers had a significantly higher survival rate than males.
-- Passengers in higher classes (Pclass 1) were more likely to survive.
-- Family size and fare paid showed patterns in survival.
-- Engineered features like **Title** and **Deck** improved model accuracy.
+* **TV advertising** was the most impactful feature on sales.
+* **Radio** had moderate effect, while **Newspaper** had minimal influence.
+* Model achieved a good **R² score**, showing strong predictive power.
+* Cross-validation confirmed model reliability.
+* Businesses can optimize ad spend by focusing more on TV and Radio.
 
 
 
-## 🔮 Future Improvements
+## 🚀 Future Improvements
 
-- Hyperparameter tuning using GridSearchCV or RandomizedSearchCV.
-- Use of advanced algorithms like XGBoost or LightGBM.
-- Deployment of model using Flask or Streamlit.
-- Create a web dashboard for predictions and visualization.
+* Use advanced models (XGBoost, Gradient Boosting, Neural Networks).
+* Add real-world features (competitor pricing, seasonal trends, discounts).
+* Perform hyperparameter tuning for better accuracy.
+* Deploy the model as a **Flask/Django web app**.
 
 
 
 ## 📬 Contact
 
-**Author:** Priyanka Keerthana Ejjana  
-**Email:** [priyankaejjana@gmail.com](mailto:priyankaejjana@gmail.com)  
-**GitHub:** [priyankaejjana24](https://github.com/priyankaejjana24)
-
+👩‍💻 **Author:** Priyanka Keerthana Ejjana
+📧 **Email:** priyankaejjana@gmail.com
+💻 **GitHub:** https://github.com/priyankaejjana24
 
