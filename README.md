@@ -132,6 +132,9 @@ SalesPrediction/
 ## 📬 Contact
 
 👩‍💻 **Author:** Priyanka Keerthana Ejjana
+
 📧 **Email:** priyankaejjana@gmail.com
+
 💻 **GitHub:** https://github.com/priyankaejjana24
+
 
